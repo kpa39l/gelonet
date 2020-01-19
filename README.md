@@ -1,2 +1,2 @@
 # gelonet
-This is a ptoject for a local IT sphere information site
+This is a project for a local IT sphere information site
