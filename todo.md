@@ -1,5 +1,6 @@
 # Список задач по реализации сайта
 
+- [] Реализация pjax-навигации https://github.com/MoOx/pjax
 - [] Поиск информации по автоматическому добавлению страниц из GitHub (очень важно для новостей)
 - [] Реализация плагина библиотеки для Grav
 - [] Реализация плагина кроспостинга в VK
@@ -8,8 +9,9 @@
 # Темы для последующих статей
 - Настройка плагина Markdown-writer для работы с Pelican
 - Структура каталогов и файлов репозитория для работы с Pelican
-- Переделка темы hexo-3 под Pelican
+- Переделка темы hexo-3 под Pelican https://yelog.org/
 - Полнотекстовый поиск по сайту https://dev.to/albogdano/implementing-full-text-search-for-your-static-site-4ool
+- Перевод https://atamby1.github.io/start-blogging-with-github-pages-and-pelican.html
 
 Заголовок сайта - "Малая ИТ Практика"
 
