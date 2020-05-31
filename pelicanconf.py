@@ -2,32 +2,72 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Kpa39l'
-SITENAME = 'Gelonet'
-SITEURL = ''
-
-PATH = 'content'
-
-TIMEZONE = 'Europe/Moscow'
-
 DEFAULT_LANG = 'ru'
 
+AUTHOR = 'Kpa39l'
+SITEURL = 'http://localhost:8000'
+SITENAME = 'Стороженко Евгений Владимирович'
+SITETITLE = 'Стороженко Евгений Владимирович'
+SITESUBTITLE = 'Субьективное ИТ в малом городе'
+SITEDESCRIPTION = 'Сайт о ИТ и ИТ-сообщетсве в малом городе'
+# SITELOGO = ''
+# FAVICON = '/images/favicon.ico'
+BROWSER_COLOR = '#333333'
+USE_LESS = True
+PYGMENTS_STYLE = 'monokai'
+TIMEZONE = 'Europe/Moscow'
+
+ROBOTS = 'index, follow'
+THEME = "/home/kpa39l/pelican/projects/gelonet.ru/themes/Flex/"
+PATH = 'content'
+OUTPUT_PATH = 'output/'
+
+DATE_FORMATS = {
+    'en': '%B %d, %Y',
+    'ru': '%d %B, %Y',
+}
+
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+USE_FOLDER_AS_CATEGORY = False
+MAIN_MENU = True
+HOME_HIDE_TAGS = True
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('github', 'https://github.com/kpa39l'),
+
+    ('facebook', 'https://facebook.com/kpa39l'),
+    ('vk', 'https://vk.com/kpa39l'),
+    ('twitter', 'https://twitter.com/kpa39l'),
+    ('youtube', 'https://www.youtube.com/channel/UC0qtXmhsIHlguW6OHZEy0Tg?view_as=subscriber'),
+    ('rss', '/blog/feeds/all.atom.xml'),
+    # ('yandex-music', 'https://music.yandex.ru/users/kpa39l/playlists/1016')
+)
+
+MENUITEMS = (
+             ('Архивы', '/archives.html'),
+             ('Категории', '/categories.html'),
+             ('Тэги', '/tags.html'),
+            )
+
+CC_LICENSE = {
+    'name': 'Creative Commons Attribution-ShareAlike',
+    'version': '4.0',
+    'slug': 'by-sa'
+}
+# Blogroll
+LINKS = (
+         ('Архивы', '/archives.html'),
+         ('Категории', '/categories.html'),
+         ('Тэги', '/tags.html'),
+        )
+
 
 DEFAULT_PAGINATION = 10
 
