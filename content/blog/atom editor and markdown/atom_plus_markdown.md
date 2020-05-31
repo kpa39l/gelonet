@@ -1,12 +1,14 @@
 Title: Настройка редактора
-Date: 2015-07-22 08:00
-Modified: 2015-07-22 08:00
+Date: 2020-05-07 22:14
+Modified: 2020-05-07 22:14
 Category: Блог
 Tags: pelican, python
 Slug: set-atom-to-work-with-markdown
-<!-- Cover: images/flex-screenshot.png -->
 Summary: Настройка редактора Атом для работы со статическими блогами с разметкой на markdown
+<!-- Cover: images/flex-screenshot.png -->
+
 ---
+
 #Настройка редактора Atom для работы с Markdown
 
 Для работы над статическим сайтом нужно:

@@ -1,10 +1,12 @@
 Title: Статические сайты
-Date: 2015-07-22 08:00
-Modified: 2015-07-22 08:00
+Date: 2020-05-02 14:36
+Modified: 2020-05-02 14:36
 Category: Блог
 Tags: pelican, site
 Slug: static-site-generator
+Summary: Почему и как был выбран Pelican в качестве движка сайта
 <!-- Cover: images/flex-screenshot.png -->
+
 ---
 #Выбор генератора статического сайта
 

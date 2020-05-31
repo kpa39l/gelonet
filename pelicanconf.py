@@ -29,7 +29,23 @@ PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images', 'content']
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['assets', 'sitemap', 'summary']
+PLUGINS = ['sitemap', 'summary']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.7,
+        'indexes': 0.2,
+        'pages': 0.1
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+SUMMARY_BEGIN_MARKER = '-----'
+SUMMARY_END_MARKER = '====='
+SUMMARY_USE_FIRST_PARAGRAPH = False
 
 DATE_FORMATS = {
     'en': '%B %d, %Y',

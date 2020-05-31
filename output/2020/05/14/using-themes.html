@@ -34,18 +34,26 @@
     <!-- Microsoft EDGE -->
     <meta name="msapplication-TileColor" content="#333333">
 
-    <meta name="author" content="Kpa39l" />
-    <meta name="description" content="Взгляд ИТ-шника из маленького городка на происходящее" />
+<meta name="author" content="Kpa39l" />
+<meta name="description" content="Как подключить к сайту на Pelican тему оформления" />
+<meta name="keywords" content="pelican, python, theme">
+
 <meta property="og:site_name" content="Стороженко Евгений Владимирович"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Стороженко Евгений Владимирович"/>
-<meta property="og:description" content="Взгляд ИТ-шника из маленького городка на происходящее"/>
+<meta property="og:title" content="Flex: Используем темы Pelican"/>
+<meta property="og:description" content="Как подключить к сайту на Pelican тему оформления"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://localhost:8000"/>
+<meta property="og:url" content="http://localhost:8000/2020/05/14/using-themes.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-05-14 23:02:00+03:00"/>
+<meta property="article:modified_time" content="2020-05-14 23:02:00+03:00"/>
+<meta property="article:author" content="http://localhost:8000/author/kpa39l.html">
+<meta property="article:section" content="Блог"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="article:tag" content="python"/>
+<meta property="article:tag" content="theme"/>
 <meta property="og:image" content="images/avatar1.jpg">
 
-  <title>Стороженко Евгений Владимирович &ndash;     Tag Office
-</title>
+  <title>Стороженко Евгений Владимирович &ndash; Flex: Используем темы Pelican</title>
 
 </head>
 <body>
@@ -93,31 +101,49 @@
 
     </nav>
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="http://localhost:8000/2016/01/22/word-excel-powerpoint-2016.html#word-excel-powerpoint-2016">Как изменить формат по-умолчанию для сохранения документов Word, Excel и PowerPoint 2016</a></h2>
+      
+    <h1 id="using-themes">Flex: Используем темы Pelican</h1>
     <p>
-          Posted on 22 января, 2016 in <a href="http://localhost:8000/category/blog.html">Блог</a>
-
+          Posted on 14 мая, 2020 in <a href="http://localhost:8000/category/blog.html">Блог</a>
 
 
     </p>
   </header>
+
+
   <div>
-      <p>Если Вы используете Word, Excel или PowerPoint 2016  и часто Вам часто приходиться передавать создаваемые файлы людям использующим старые версии офисного пакета от Microsoft или пакеты OpenOffice/LibreOffice, то может надоесть каждый раз выбирать опцию сохранения файла в одном нужных форматов.  В этой заметке описано как изменить формат файлов по-умолчанию в диалоге сохранения.</p>
-      <br>
-      <a class="btn" href="http://localhost:8000/2016/01/22/word-excel-powerpoint-2016.html#word-excel-powerpoint-2016">    Continue reading
-</a>
+    <!-- Cover:  -->
+
+<hr>
+<h1>Используем темы</h1>
+<p>Подразумевается, что перед использованием информации из данной инструкции Вы уже прочитали документацию на Pelican, подготовили сайт и сформировалось жеение применить тему оформления отличную от умолчальной.</p>
+<p>Во-первых, необходимо выбрать место хранения тем оформления. Для этого примера будет использоваться директория , но Вы можете использовать любую другую. Клонируйем репозиторий pelican-themes в выбранную директорию на локальном компьютере:
+<code>cd ~/pelican/projects/gelonet.ru
+git clone --recursive https://github.com/getpelican/pelican-themes ./pelican-themes</code>
+Теперь в этой папке будет храниться содержимое репозитория.</p>
+<p>Для использования одной из полученных тем оформления нужно добавить в файл конфигурации pelican следующую строчку:
+<code>THEME = "/home/user/pelican-themes/theme-name"</code>
+Например, чтобы использовать тему Flex, следует добавить вот такую строку:
+<code>THEME = "/home/user/pelican-themes/Flex"</code></p>
+<p>Сохраните изменения в файле конфигурации и перегенерируйте сайт одним из доступных средс, например с использвоанием make-файла, который был сформирован во время использования команды <code>pelican-quickstart</code>:
+<code>make html</code></p>
+<p>Так же можно указать тему используемую для генерации сайта через параметр <code>-t ~/pelican-themes/Themes</code> команды <code>pelican</code>. Если требуется изменить стандартную тему, проверьте что все изменения производятся в копиях файлов темы в отдельном каталоге <code>~/pelican-themes/your-theme</code>. Все изменения в файлах темы сгенерированных в директории output будут удалены при следующей генерации сайта.</p>
   </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://localhost:8000/tag/pelican.html">pelican</a>
+      <a href="http://localhost:8000/tag/python.html">python</a>
+      <a href="http://localhost:8000/tag/theme.html">theme</a>
+    </p>
+  </div>
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>

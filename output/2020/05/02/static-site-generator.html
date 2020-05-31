@@ -34,18 +34,25 @@
     <!-- Microsoft EDGE -->
     <meta name="msapplication-TileColor" content="#333333">
 
-    <meta name="author" content="Kpa39l" />
-    <meta name="description" content="Взгляд ИТ-шника из маленького городка на происходящее" />
+<meta name="author" content="Kpa39l" />
+<meta name="description" content="Почему и как был выбран Pelican в качестве движка сайта" />
+<meta name="keywords" content="pelican, site">
+
 <meta property="og:site_name" content="Стороженко Евгений Владимирович"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Стороженко Евгений Владимирович"/>
-<meta property="og:description" content="Взгляд ИТ-шника из маленького городка на происходящее"/>
+<meta property="og:title" content="Статические сайты"/>
+<meta property="og:description" content="Почему и как был выбран Pelican в качестве движка сайта"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://localhost:8000"/>
+<meta property="og:url" content="http://localhost:8000/2020/05/02/static-site-generator.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-05-02 14:36:00+03:00"/>
+<meta property="article:modified_time" content="2020-05-02 14:36:00+03:00"/>
+<meta property="article:author" content="http://localhost:8000/author/kpa39l.html">
+<meta property="article:section" content="Блог"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="article:tag" content="site"/>
 <meta property="og:image" content="images/avatar1.jpg">
 
-  <title>Стороженко Евгений Владимирович &ndash;     Tag Office
-</title>
+  <title>Стороженко Евгений Владимирович &ndash; Статические сайты</title>
 
 </head>
 <body>
@@ -93,31 +100,49 @@
 
     </nav>
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="http://localhost:8000/2016/01/22/word-excel-powerpoint-2016.html#word-excel-powerpoint-2016">Как изменить формат по-умолчанию для сохранения документов Word, Excel и PowerPoint 2016</a></h2>
+      
+    <h1 id="static-site-generator">Статические сайты</h1>
     <p>
-          Posted on 22 января, 2016 in <a href="http://localhost:8000/category/blog.html">Блог</a>
-
+          Posted on 02 мая, 2020 in <a href="http://localhost:8000/category/blog.html">Блог</a>
 
 
     </p>
   </header>
+
+
   <div>
-      <p>Если Вы используете Word, Excel или PowerPoint 2016  и часто Вам часто приходиться передавать создаваемые файлы людям использующим старые версии офисного пакета от Microsoft или пакеты OpenOffice/LibreOffice, то может надоесть каждый раз выбирать опцию сохранения файла в одном нужных форматов.  В этой заметке описано как изменить формат файлов по-умолчанию в диалоге сохранения.</p>
-      <br>
-      <a class="btn" href="http://localhost:8000/2016/01/22/word-excel-powerpoint-2016.html#word-excel-powerpoint-2016">    Continue reading
-</a>
+    <!-- Cover: images/flex-screenshot.png -->
+
+<hr>
+<h1>Выбор генератора статического сайта</h1>
+<p>Анализ того ресурса, что размещен на хостинге и называется моим сайтом, показал что я замечательно и без проблем живу на flat cms Grav (плоская CMS без базы данных). При этом я здорово сэкономил на хостинге. Мой месячная абонплата на <a href="http://jino.ru">jino.ru</a>  не дотягивала даже до 80 рублей. Поэтому мне показалочь логичным сделать следующий шаг и перейти на полностью статический сайт генерируемый из текстовых файлов (мне понравился язык разметки Markdown), хранимых в каком-либо облаке, например на GitHub.</p>
+<p>Оказалось таких хитрецов как я полным-полно и в сети легко найти тонный инструментов для такой работы. Поскольку я неофит в Python и уже успел ознакомиться с шаблонизатором Jinja2, то и сформировал для себя следующий набор требований к генератору статического сайта:</p>
+<ol>
+<li>Реализация на Python. Для работы и на ноутбуке с GNU\Linux и на домашнем компе с Windows 10. Опять же с исследовательскими целями полезно работать с инструментом написанном на Python.</li>
+<li>Работа с данными в файлах Markdown. Это удобный язык разметки, позволяющий легко реализовывать все нужные мне средства орагнизации текста.</li>
+<li>Работа с шаблонизатором Jinja2. Удобный и мощный шаболнизатор. Понравился мне он, да и папа мой называл меня в детстве Джинджя.</li>
+<li>Возможность работы с плагинами.
+5.</li>
+</ol>
+<p>В итоге непродолжительных поисков нашёл в сети сайт <a href="https://www.staticgen.com/">https://www.staticgen.com/</a> и на нем по указанным параметрам отобрал вот такое вот решение:
+<a href="https://blog.getpelican.com/">https://blog.getpelican.com/</a>
+<a href="https://github.com/getpelican/">https://github.com/getpelican/</a>
+<a href="http://www.pelicanthemes.com/">http://www.pelicanthemes.com/</a></p>
   </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://localhost:8000/tag/pelican.html">pelican</a>
+      <a href="http://localhost:8000/tag/site.html">site</a>
+    </p>
+  </div>
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>
