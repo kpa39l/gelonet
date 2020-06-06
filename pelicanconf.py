@@ -83,6 +83,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 USE_FOLDER_AS_CATEGORY = False
+DEFAULT_CATEGORY = 'Блог'
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
@@ -110,6 +111,7 @@ CC_LICENSE = {
 }
 # Blogroll
 LINKS = (
+         ('Главная', '/index.html'),
          ('Архивы', '/archives.html'),
          ('Категории', '/categories.html'),
          ('Тэги', '/tags.html'),
