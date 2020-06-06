@@ -4,7 +4,7 @@ Tags: pelican
 Summary: Как починить  битые ссылки на изображения на страницах отличных от индекса
 Image: cover.png
 ---
-![Cover]({attach}cover.png)
+![Cover]({attach}cover.png){width="320" height="195"}
 # Проблема
 
 Есть Markdown-страница в каталоге content/mypage.md, на основе которой был сгенерирован файл `localhost:8000/mypage.html`, и в нем есть рабочая ссылка на изображение:

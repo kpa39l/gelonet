@@ -5,42 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/</loc>
-<lastmod>2020-06-06T12:20:31-00:00</lastmod>
+<lastmod>2020-06-06T15:37:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/tags.html</loc>
-<lastmod>2020-06-06T12:20:31-00:00</lastmod>
+<lastmod>2020-06-06T15:37:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/categories.html</loc>
-<lastmod>2020-06-06T12:20:31-00:00</lastmod>
+<lastmod>2020-06-06T15:37:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/authors.html</loc>
-<lastmod>2020-06-06T12:20:31-00:00</lastmod>
+<lastmod>2020-06-06T15:37:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/archives.html</loc>
-<lastmod>2020-06-06T12:20:31-00:00</lastmod>
+<lastmod>2020-06-06T15:37:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2020/06/01/broken-links-on-pics</loc>
-<lastmod>2020-06-01T00:44:55+03:00</lastmod>
+<loc>http://localhost:8000/2020/06/06/broken-links-on-pics</loc>
+<lastmod>2020-06-06T15:37:27+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
@@ -89,7 +89,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/category/blog.html</loc>
-<lastmod>2020-06-01T00:44:55+02:30</lastmod>
+<lastmod>2020-06-06T15:37:27+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
@@ -103,7 +103,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/tag/pelican.html</loc>
-<lastmod>2020-06-01T00:44:55+02:30</lastmod>
+<lastmod>2020-06-06T15:37:27+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
@@ -152,7 +152,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/author/storozhenko-evgenii-vladimirovich.html</loc>
-<lastmod>2020-06-01T00:44:55+02:30</lastmod>
+<lastmod>2020-06-06T15:37:27+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
