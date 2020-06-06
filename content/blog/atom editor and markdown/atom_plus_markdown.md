@@ -1,14 +1,13 @@
-Title: Настройка редактора
+Title: Настройка редактора Atom для работы с Markdown
 Date: 2020-05-07 22:14
 Modified: 2020-05-07 22:14
 Category: Блог
 Tags: pelican, python
 Slug: set-atom-to-work-with-markdown
 Summary: Настройка редактора Атом для работы со статическими блогами с разметкой на markdown
-<!-- Cover: images/flex-screenshot.png -->
-
+Image: cover.png
 ---
-
+![Cover]({attach}cover.png)
 #Настройка редактора Atom для работы с Markdown
 
 Для работы над статическим сайтом нужно:
@@ -29,39 +28,39 @@ Github. Что позволяет собрать функионально раб
 системы.
 
 Скачиваем пакет с сайта [Atom][75f0e641].
-![Главная страница atom.io]({static}atom-download.png)      
+![Главная страница atom.io]({attach}atom-download.png)      
 Устанавливаем зависимости:
 
-`$ sudo aptitude install git, libgconf-2-4, libgtk-3-0, libgcrypt20, libnotify4, libxtst6, libnss3, python, gvfs-bin, xdg-utils, libx11-xcb1, libxss1, libasound2, libxkbfile1, libcurl4, policykit-1, lsb-release
-`
+```shell
+$ sudo aptitude install git, libgconf-2-4, libgtk-3-0, libgcrypt20, libnotify4,
+libxtst6, libnss3, python, gvfs-bin, xdg-utils, libx11-xcb1, libxss1, libasound2,
+ libxkbfile1, libcurl4, policykit-1, lsb-release
+```
 Первое, что следует сделать после установки Git — указать своё имя и адрес электронной почты. Это важно, потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:
 
-`$ git config --global user.name "kpa39l"
+```shell
+$ git config --global user.name "kpa39l"
 $ git config --global user.email kpa39l@yandex.ru
-`
+```
 Если указана опция --global, то эти настройки достаточно сделать только один раз, поскольку в этом случае Git будет использовать эти данные для всего, что вы делаете в этой системе. Если для каких-то отдельных проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра --global в каталоге с нужным проектом.
 
 Теперь устанавливаем сам редактор:
-
-`$ sudo dpkg -i ~/Загрузки/atom-amd64.deb`
-
+```shell
+$ sudo dpkg -i ~/Загрузки/atom-amd64.deb
+```
 После установки ярлык для запуска добавиться в раздел "Разработка" системного меню.
-![Расположения ярлыка в системном меню]({static}system-menu.png)
+![Расположения ярлыка в системном меню]({attach}system-menu.png)
 
 Или можно его запустить используя команду в консоли от текущего пользователя:
-
-`$ atom`
-
+```shell
+$ atom
+```
 Для хранения файлов можно использовать репозиторий GitHub. Ведь именно для этого как раз и выбирался редактор Atom,как имеющий встроенную
 интеграцию c GitHub. Для этого нужно получить ссылку для клонирования репозитория
-![Копируем ссылку для клонирования репозитория]({static}clone-repository.png)
-
+![Копируем ссылку для клонирования репозитория]({attach}clone-repository.png)
 `https://github.com/kpa39l/gelonet.git`
-
 Теперь при открытии панели с интеграцией с GitHUb (Ctrl + Shift + 8) и нажав кнопку "Clone existing repository" мы можем ввести в поле ввода эту ссылку. Чтобы не мучаться с авторизацией в ссылку можно добавить данные о логине и пароле, приведя её к виду:
-
 `https://login:password@github.com/kpa39l/gelonet.git`
-
 Эти действия настроят интеграцию локальной папки с репозиторием на GitHub без редактирования
 файлов конфигурации.
 
@@ -71,8 +70,9 @@ $ git config --global user.email kpa39l@yandex.ru
 - tool-bar-markdown-writer
 
 Чтобы не искать их в списке пакетов достаточно выполнить в консоли команду:
-`$ apm install markdown-scroll-sync tool-bar markdown-writer tool-bar-markdown-writer`
-
+```shell
+$ apm install markdown-scroll-sync tool-bar markdown-writer tool-bar-markdown-writer`
+```
 В итоге при работе с Markdown  файлами в интерфейсе редактора появится вот такая панель:
 ![Панель для работы c markdown]({static}md-panel.png)
 Часто используемые инструменты Markdown-разметки отображаются в верхней части окна и при

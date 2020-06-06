@@ -2,20 +2,43 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+
+
 DEFAULT_LANG = 'ru'
 
-AUTHOR = 'Kpa39l'
+AUTHOR = 'Стороженко Евгений Владимирович'
 SITEURL = 'http://localhost:8000'
 SITENAME = 'Стороженко Евгений Владимирович'
 SITETITLE = 'Стороженко Евгений Владимирович'
 SITESUBTITLE = 'Субьективно обо всем вокруг'
 SITEDESCRIPTION = 'Взгляд ИТ-шника из маленького городка на происходящее'
-SITELOGO = 'images/avatar1.jpg'
-FAVICON = 'images/favicon.ico'
+SITELOGO = '/images/avatar1.jpg'
+FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
+
+MARKUP = 'Markdown'
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
 USE_LESS = True
 PYGMENTS_STYLE = 'monokai'
+
 TIMEZONE = 'Europe/Moscow'
+DEFAULT_DATE = 'fs'
+
+SLUGIFY_SOURCE = 'basename'
+SLUG_REGEX_SUBSTITUTIONS = [
+(r'[^\w\s-]', ''), # remove non-alphabetical/whitespace/'-' chars
+(r'(?u)\A\s*', ''), # strip leading whitespace
+(r'(?u)\s*\Z', ''), # strip trailing whitespace
+(r'[-\s]+', '-'), # reduce multiple whitespace or '-' to single '-'
+]
 
 ROBOTS = 'index, follow'
 THEME = "/home/kpa39l/pelican/projects/gelonet.ru/themes/Flex/"
@@ -23,13 +46,13 @@ THEME = "/home/kpa39l/pelican/projects/gelonet.ru/themes/Flex/"
 PATH = 'content'
 OUTPUT_PATH = 'output/'
 ARTICLE_PATHS = ['blog', 'news']
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}'
 PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images', 'content']
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['sitemap', 'summary']
+PLUGINS = ['sitemap', 'summary', 'representative_image']
 SITEMAP = {
     'format': 'xml',
     'priorities': {

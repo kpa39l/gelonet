@@ -5,76 +5,83 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/</loc>
-<lastmod>2020-05-31T19:29:03-00:00</lastmod>
+<lastmod>2020-06-06T12:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/tags.html</loc>
-<lastmod>2020-05-31T19:29:03-00:00</lastmod>
+<lastmod>2020-06-06T12:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/categories.html</loc>
-<lastmod>2020-05-31T19:29:03-00:00</lastmod>
+<lastmod>2020-06-06T12:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/authors.html</loc>
-<lastmod>2020-05-31T19:29:03-00:00</lastmod>
+<lastmod>2020-06-06T12:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
 <loc>http://localhost:8000/archives.html</loc>
-<lastmod>2020-05-31T19:29:03-00:00</lastmod>
+<lastmod>2020-06-06T12:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2020/05/14/using-themes.html</loc>
+<loc>http://localhost:8000/2020/06/01/broken-links-on-pics</loc>
+<lastmod>2020-06-01T00:44:55+03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>http://localhost:8000/2020/05/14/using-themes</loc>
 <lastmod>2020-05-14T23:02:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2020/05/11/pelican-quickstart.html</loc>
+<loc>http://localhost:8000/2020/05/11/pelican-quickstart</loc>
 <lastmod>2020-05-11T08:00:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2020/05/07/set-atom-to-work-with-markdown.html</loc>
+<loc>http://localhost:8000/2020/05/07/set-atom-to-work-with-markdown</loc>
 <lastmod>2020-05-07T22:14:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2020/05/02/static-site-generator.html</loc>
+<loc>http://localhost:8000/2020/05/02/static-site-generator</loc>
 <lastmod>2020-05-02T14:36:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2017/09/20/xelent.html</loc>
+<loc>http://localhost:8000/2017/09/20/xelent</loc>
 <lastmod>2017-09-20T03:15:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/2016/01/22/word-excel-powerpoint-2016.html</loc>
+<loc>http://localhost:8000/2016/01/22/word-excel-powerpoint-2016</loc>
 <lastmod>2016-01-22T10:37:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
@@ -82,7 +89,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/category/blog.html</loc>
-<lastmod>2020-05-14T23:02:00+02:30</lastmod>
+<lastmod>2020-06-01T00:44:55+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
@@ -96,7 +103,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://localhost:8000/tag/pelican.html</loc>
-<lastmod>2020-05-14T23:02:00+02:30</lastmod>
+<lastmod>2020-06-01T00:44:55+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>
@@ -144,8 +151,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://localhost:8000/author/kpa39l.html</loc>
-<lastmod>2020-05-14T23:02:00+02:30</lastmod>
+<loc>http://localhost:8000/author/storozhenko-evgenii-vladimirovich.html</loc>
+<lastmod>2020-06-01T00:44:55+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.2</priority>
 </url>

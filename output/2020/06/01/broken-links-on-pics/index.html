@@ -34,18 +34,24 @@
     <!-- Microsoft EDGE -->
     <meta name="msapplication-TileColor" content="#333333">
 
-    <meta name="author" content="Стороженко Евгений Владимирович" />
-    <meta name="description" content="Взгляд ИТ-шника из маленького городка на происходящее" />
+<meta name="author" content="Стороженко Евгений Владимирович" />
+<meta name="description" content="Как починить битые ссылки на изображения на страницах отличных от индекса" />
+<meta name="keywords" content="pelican">
+
 <meta property="og:site_name" content="Стороженко Евгений Владимирович"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Стороженко Евгений Владимирович"/>
-<meta property="og:description" content="Взгляд ИТ-шника из маленького городка на происходящее"/>
+<meta property="og:title" content="&#34;Сломанные&#34; ссылки изображений на страницах статей в Pelican"/>
+<meta property="og:description" content="Как починить битые ссылки на изображения на страницах отличных от индекса"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://localhost:8000"/>
+<meta property="og:url" content="http://localhost:8000/2020/06/01/broken-links-on-pics"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-06-01 00:44:55.900734+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://localhost:8000/author/storozhenko-evgenii-vladimirovich.html">
+<meta property="article:section" content="Блог"/>
+<meta property="article:tag" content="pelican"/>
 <meta property="og:image" content="/images/avatar1.jpg">
 
-  <title>Стороженко Евгений Владимирович &ndash;     Tag python
-</title>
+  <title>Стороженко Евгений Владимирович &ndash; &#34;Сломанные&#34; ссылки изображений на страницах статей в Pelican</title>
 
 </head>
 <body>
@@ -93,50 +99,52 @@
 
     </nav>
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="http://localhost:8000/2020/05/14/using-themes#using-themes">Flex: Используем темы Pelican</a></h2>
+      
+    <h1 id="broken-links-on-pics">"Сломанные" ссылки изображений на страницах статей в Pelican</h1>
     <p>
-          Posted on 14 мая, 2020 in <a href="http://localhost:8000/category/blog.html">Блог</a>
-
+          Posted on 01 июня, 2020 in <a href="http://localhost:8000/category/blog.html">Блог</a>
 
 
     </p>
   </header>
+
+
   <div>
-      <p>Как подключить к сайту на Pelican тему оформления</p>
-      <br>
-      <a class="btn" href="http://localhost:8000/2020/05/14/using-themes#using-themes">    Continue reading
-</a>
+    <p><img alt="Cover" src="http://localhost:8000/2020/06/01/broken-links-on-pics/cover.png"></p>
+<h1>Проблема</h1>
+<p>Есть Markdown-страница в каталоге content/mypage.md, на основе которой был сгенерирован файл <code>localhost:8000/mypage.html</code>, и в нем есть рабочая ссылка на изображение:
+<code>![Alt text](content/myimage.png)</code>
+которая в сгенерированном файле выглядит как:
+<code>&lt;img src="content/myimage.png" /&gt;</code>
+и ссылается на адрес <code>localhost:8000/content/myimage.png</code>. Однако, если открыть тот же самый файл HTML со страницы с категориями, то так же ссылка на картинку
+<code>![Alt text](content/myimage.png)</code>
+с тем же самым HTML кодом
+<code>&lt;img src="content/myimage.png" /&gt;</code>
+но со страницы со списком статей по категории <code>localhost:8000/categories/mycategory.html</code>, этот относительный URL-адрес картинкитеперь ссылается на <code>localhost:8000/categories/content/myimage.png</code> и изображение не отображется со страниц категорий или тэгов, поскольку ссылка битая.
+В итоге получается что проблема заключается в том, что используются относительные URL-адреса изображений.</p>
+<h1>Решение</h1>
+<p>Решение очень простое: использвоать еще один <code>/</code>. Используйте абсолютные ссылки на изображения в Markdown файлах добавляя в начало ведущий <code>/</code>.  Вместо использования ссылок вида <code>content/myimage.png</code>, пользуйтесь <code>/content/myimage.png</code>:
+<code>![Alt text](/content/myimage.png)</code>
+И такая ссылка на изображение всегда будет генерировать ссылку  <code>localhost:8000/content/myimage.png</code>, вне зависимости от того на какой странице это будет.</p>
+<p>Я так чинил ссылки на аватарку. На Индексной странице она отображалась нормально, но на странице категорий, тэгов или даже самих статей ссылка билась. Для исправления в файле настроек <code>pelicanconf.py</code> я указал следующие настройки с абсолютными ссылками:
+<code>SITELOGO = '/images/avatar1.jpg'
+FAVICON = '/images/favicon.ico'</code>
+И это полностью решило проблему.</p>
+<p><a href="https://stackoverflow.com/questions/30794909/pelican-image-links-break-when-viewing-article-through-categories">Источник</a></p>
   </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="http://localhost:8000/2020/05/07/set-atom-to-work-with-markdown#set-atom-to-work-with-markdown">Настройка редактора Atom для работы с Markdown</a></h2>
+  <div class="tag-cloud">
     <p>
-          Posted on 07 мая, 2020 in <a href="http://localhost:8000/category/blog.html">Блог</a>
-
-
-
+      <a href="http://localhost:8000/tag/pelican.html">pelican</a>
     </p>
-  </header>
-  <div>
-        <img src="http://localhost:8000/2020/05/07/set-atom-to-work-with-markdown/cover.png">
-      <p>Настройка редактора Атом для работы со статическими блогами с разметкой на markdown</p>
-      <br>
-      <a class="btn" href="http://localhost:8000/2020/05/07/set-atom-to-work-with-markdown#set-atom-to-work-with-markdown">    Continue reading
-</a>
   </div>
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>
