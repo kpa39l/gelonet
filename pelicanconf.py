@@ -52,7 +52,7 @@ PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images', 'content']
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['sitemap', 'summary', 'representative_image']
+PLUGINS = ['sitemap', 'summary', 'representative_image', 'liquid_tags.youtube']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
